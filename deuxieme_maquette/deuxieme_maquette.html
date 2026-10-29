@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Vaneau Architecture Toiture | Haute Précision, Zinguerie & Urgence Toiture</title>
-    <!-- Polices Architecturales & Précision Industrielle : Syne, Space Grotesk, Inter, JetBrains Mono -->
+    <!-- Polices Architecturales & Précision Industrielle : Syne (Titres d'impact), Space Grotesk (Technique), Inter (Lecture), JetBrains Mono (Données) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="deuxieme_maquette/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 0. BANDEAU DE VEILLE MÉTÉO & TÉLÉMÉTRIE D'URGENCE -->
+    <!-- 0. BANDEAU DE VEILLE MÉTÉO & TÉLÉMÉTRIE D'URGENCE (Style HUD Technique) -->
     <div class="tech-ticker-bar">
         <div class="container ticker-flex">
             <div class="ticker-status">
@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <!-- 1. NAVIGATION ARCHITECTURALE HUD -->
+    <!-- 1. NAVIGATION ARCHITECTURALE HUD (Dark Glassmorphism & Lignes Fines) -->
     <header class="header-hud">
         <nav class="navbar-hud container">
             <a href="#" class="logo-hud">
@@ -163,7 +163,7 @@
             </div>
         </section>
 
-        <!-- 3. COMPARATEUR INTERACTIF AVANT / APRÈS (Slider) -->
+        <!-- 3. COMPARATEUR INTERACTIF AVANT / APRÈS (Slider Interactif) -->
         <section id="comparateur" class="section dark-section">
             <div class="container">
                 <div class="section-title-center">
@@ -176,7 +176,7 @@
 
                 <div class="interactive-slider-wrapper">
                     <div class="comparison-container" id="roof-compare-box">
-                        <!-- Couche Après -->
+                        <!-- Image / Couche Après (Rénové haute performance) -->
                         <div class="comparison-layer layer-after">
                             <div class="layer-visual roof-after-graphic">
                                 <div class="blueprint-lines"></div>
@@ -194,7 +194,7 @@
                             <span class="comparison-badge badge-after">APRÈS : ÉTANCHÉITÉ 100% GARANTIE 30 ANS</span>
                         </div>
 
-                        <!-- Couche Avant -->
+                        <!-- Image / Couche Avant (Détérioré / Infiltration) -->
                         <div class="comparison-layer layer-before" id="layer-before">
                             <div class="layer-visual roof-before-graphic">
                                 <div class="roof-structure-visual">
@@ -211,7 +211,7 @@
                             <span class="comparison-badge badge-before">AVANT : DÉGRADATION MÉTÉO & FUITE</span>
                         </div>
 
-                        <!-- Poignée de contrôle -->
+                        <!-- Poignée de contrôle du slider -->
                         <div class="comparison-handle" id="slider-handle">
                             <div class="handle-line"></div>
                             <div class="handle-button">
@@ -221,6 +221,7 @@
                             <div class="handle-line"></div>
                         </div>
 
+                        <!-- Curseur natif pour accessibilité / tactile -->
                         <input type="range" min="0" max="100" value="50" class="range-slider-input" id="roof-range-input" aria-label="Curseur comparateur avant après toiture">
                     </div>
 
@@ -231,7 +232,7 @@
             </div>
         </section>
 
-        <!-- 4. SIMULATEUR / CALCULATEUR DE CHANTIER INTERACTIF -->
+        <!-- 4. SIMULATEUR / CALCULATEUR DE CHANTIER INTERACTIF (Conversion Maximale) -->
         <section id="simulateur" class="section calc-section">
             <div class="container">
                 <div class="calc-panel-wrapper">
@@ -242,8 +243,9 @@
                     </div>
 
                     <div class="calc-grid">
+                        <!-- Colonne Contrôles -->
                         <div class="calc-controls">
-                            <!-- Choix 1 -->
+                            <!-- Choix 1 : Type de travaux -->
                             <div class="control-group">
                                 <label class="control-label">1. Nature de l'intervention :</label>
                                 <div class="options-pills" id="opt-service">
@@ -262,7 +264,7 @@
                                 </div>
                             </div>
 
-                            <!-- Choix 2 -->
+                            <!-- Choix 2 : Matériau souhaité -->
                             <div class="control-group">
                                 <label class="control-label">2. Matériau de couverture :</label>
                                 <div class="options-pills" id="opt-material">
@@ -281,7 +283,7 @@
                                 </div>
                             </div>
 
-                            <!-- Choix 3 -->
+                            <!-- Choix 3 : Curseur Surface m² -->
                             <div class="control-group">
                                 <div class="label-with-value">
                                     <label class="control-label" for="surface-range">3. Surface estimée de votre toiture :</label>
@@ -296,7 +298,7 @@
                             </div>
                         </div>
 
-                        <!-- Résumé Dynamique -->
+                        <!-- Colonne Résultat Dynamique -->
                         <div class="calc-summary-card">
                             <div class="summary-badge">FICHE TECHNIQUE CALCULÉE</div>
                             <div class="summary-title" id="summary-title">Rénovation Complète Tuile Terre Cuite NF</div>
@@ -336,7 +338,7 @@
             </div>
         </section>
 
-        <!-- 5. SPÉCIFICATIONS TECHNIQUES -->
+        <!-- 5. SPÉCIFICATIONS & PRESTATIONS TECHNIQUES HAUTE PERFORMANCE -->
         <section id="services" class="section specs-section">
             <div class="container">
                 <div class="section-title-row">
@@ -350,6 +352,7 @@
                 </div>
 
                 <div class="specs-grid">
+                    <!-- Spécification 1 -->
                     <div class="spec-card">
                         <div class="card-corner-tag">DTU 40.21</div>
                         <div class="spec-icon-box">📐</div>
@@ -365,6 +368,7 @@
                         <div class="spec-badge-footer">GARANTIE RÉSISTANCE 130 KM/H</div>
                     </div>
 
+                    <!-- Spécification 2 -->
                     <div class="spec-card spec-highlight">
                         <div class="card-corner-tag alert">URGENCE ACTIVE</div>
                         <div class="spec-icon-box">⚡</div>
@@ -380,6 +384,7 @@
                         <div class="spec-badge-footer flame">DÉPLACEMENT IMMÉDIAT 7J/7</div>
                     </div>
 
+                    <!-- Spécification 3 -->
                     <div class="spec-card">
                         <div class="card-corner-tag">DTU 40.41</div>
                         <div class="spec-icon-box">🛠️</div>
@@ -395,6 +400,7 @@
                         <div class="spec-badge-footer">RÉSISTANCE CORROSION ABSOLUE</div>
                     </div>
 
+                    <!-- Spécification 4 -->
                     <div class="spec-card">
                         <div class="card-corner-tag">LABEL RGE</div>
                         <div class="spec-icon-box">🌿</div>
@@ -413,7 +419,7 @@
             </div>
         </section>
 
-        <!-- 6. RADAR TACTIQUE INTERACTIF -->
+        <!-- 6. RADAR TACTIQUE INTERACTIF : SECTEURS D'URGENCE (Dark HUD Map) -->
         <section id="radar" class="section radar-tactical-section">
             <div class="container">
                 <div class="section-title-center">
@@ -425,6 +431,7 @@
                 </div>
 
                 <div class="radar-card-layout">
+                    <!-- Graphique Radar SVG Dark Mode -->
                     <div class="radar-viewport">
                         <svg viewBox="0 0 540 440" class="tactical-svg" id="tactical-radar-svg" aria-label="Radar tactique de géolocalisation des urgences toiture">
                             <defs>
@@ -438,20 +445,25 @@
                                 </pattern>
                             </defs>
 
+                            <!-- Grille de fond -->
                             <rect width="100%" height="100%" fill="url(#hudGrid)" rx="12"/>
 
+                            <!-- Lignes de repères cartésiens -->
                             <line x1="270" y1="20" x2="270" y2="420" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2, 4"/>
                             <line x1="20" y1="220" x2="520" y2="220" stroke="rgba(255,255,255,0.1)" stroke-dasharray="2, 4"/>
 
+                            <!-- Cercles concentriques tactiques -->
                             <circle class="radar-ring ring-outer" id="svg-ring-outer" cx="270" cy="220" r="170" />
                             <circle class="radar-ring ring-mid" id="svg-ring-mid" cx="270" cy="220" r="115" />
                             <circle class="radar-ring ring-core" id="svg-ring-core" cx="270" cy="220" r="65" />
 
+                            <!-- Balayage radar rotatif -->
                             <g class="radar-sweeper">
                                 <path d="M 270 220 L 440 220 A 170 170 0 0 0 390 100 Z" fill="url(#radarScanGrad)"/>
                                 <line x1="270" y1="220" x2="440" y2="220" stroke="#FF6B00" stroke-width="1.8"/>
                             </g>
 
+                            <!-- Marqueur Central : Atelier QG -->
                             <g class="qg-marker">
                                 <circle cx="270" cy="220" r="7" class="qg-dot"/>
                                 <circle cx="270" cy="220" r="16" class="qg-pulse"/>
@@ -459,6 +471,7 @@
                                 <text x="270" y="248" class="qg-sublabel">BASE D'ASTREINTE</text>
                             </g>
 
+                            <!-- Marqueurs Villes / Secteurs Satellites -->
                             <g class="sat-marker" id="marker-north">
                                 <circle cx="270" cy="115" r="5" class="sat-dot"/>
                                 <text x="282" y="119" class="sat-label">Secteur Métropole Nord</text>
@@ -476,6 +489,7 @@
                                 <text x="65" y="224" class="sat-label">Secteur Littoral Ouest</text>
                             </g>
 
+                            <!-- Coordonnées en direct -->
                             <text x="26" y="36" class="hud-corner-text">RADAR SCAN // FREQ: 142.8 MHz</text>
                             <text x="26" y="415" class="hud-corner-text" id="live-coord-text">LAT: 44°50'N • LON: 0°34'W</text>
                         </svg>
@@ -486,7 +500,7 @@
                         </div>
                     </div>
 
-                    <!-- Panneau de Contrôle -->
+                    <!-- Panneau de Contrôle Interactif des Secteurs -->
                     <div class="radar-control-panel">
                         <div class="panel-intro">
                             <span class="panel-kpi">Rayon d'intervention 0 à 50 km</span>
@@ -494,6 +508,7 @@
                         </div>
 
                         <div class="sector-buttons-list">
+                            <!-- Bouton Secteur 1 -->
                             <button type="button" class="sector-card active" data-zone="core">
                                 <div class="sector-radio"></div>
                                 <div class="sector-content">
@@ -505,6 +520,7 @@
                                 </div>
                             </button>
 
+                            <!-- Bouton Secteur 2 -->
                             <button type="button" class="sector-card" data-zone="mid">
                                 <div class="sector-radio"></div>
                                 <div class="sector-content">
@@ -516,6 +532,7 @@
                                 </div>
                             </button>
 
+                            <!-- Bouton Secteur 3 -->
                             <button type="button" class="sector-card" data-zone="outer">
                                 <div class="sector-radio"></div>
                                 <div class="sector-content">
@@ -539,7 +556,7 @@
             </div>
         </section>
 
-        <!-- 7. PROTOCOLE TECHNIQUE EN 4 PHASES -->
+        <!-- 7. PROTOCOLE TECHNIQUE EN 4 PHASES (Rigueur chirurgicale) -->
         <section id="protocole" class="section protocol-section">
             <div class="container">
                 <div class="section-title-center">
@@ -551,6 +568,7 @@
                 </div>
 
                 <div class="protocol-timeline">
+                    <!-- Étape 1 -->
                     <div class="protocol-step">
                         <div class="step-num">01</div>
                         <div class="step-content">
@@ -560,6 +578,7 @@
                         </div>
                     </div>
 
+                    <!-- Étape 2 -->
                     <div class="protocol-step">
                         <div class="step-num">02</div>
                         <div class="step-content">
@@ -569,6 +588,7 @@
                         </div>
                     </div>
 
+                    <!-- Étape 3 -->
                     <div class="protocol-step">
                         <div class="step-num">03</div>
                         <div class="step-content">
@@ -578,6 +598,7 @@
                         </div>
                     </div>
 
+                    <!-- Étape 4 -->
                     <div class="protocol-step">
                         <div class="step-num">04</div>
                         <div class="step-content">
@@ -590,7 +611,7 @@
             </div>
         </section>
 
-        <!-- 8. AVIS CLIENTS -->
+        <!-- 8. TÉMOIGNAGES & CAS CLIENTS VÉRIFIÉS -->
         <section class="section reviews-section">
             <div class="container">
                 <div class="section-title-row">
@@ -726,7 +747,7 @@
         </div>
     </footer>
 
-    <!-- 11. DOCK DE COMMANDE FIXE MOBILE -->
+    <!-- 11. DOCK DE COMMANDE FIXE MOBILE (Sticky Bottom Bar Spécial Smartphone) -->
     <div class="mobile-command-dock" aria-label="Menu d'urgence rapide mobile">
         <div class="dock-container">
             <div class="dock-status">
@@ -743,26 +764,33 @@
         </div>
     </div>
 
-    <!-- SCRIPTS INTERACTIFS -->
-    <script src="deuxieme_maquette/data.js"></script>
+    <!-- SCRIPTS INTERACTIFS : SIMULATEUR, COMPARATEUR AVANT/APRÈS, RADAR SECTEURS -->
+    <script src="data.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // 1. COMPARATEUR AVANT / APRÈS
+
+            /* ==================================================================
+               1. COMPARATEUR AVANT / APRÈS (DRAGGABLE & TOUCH SLIDER)
+               ================================================================== */
             const compareBox = document.getElementById('roof-compare-box');
             const layerBefore = document.getElementById('layer-before');
             const sliderHandle = document.getElementById('slider-handle');
             const rangeInput = document.getElementById('roof-range-input');
 
             function updateSlider(percent) {
+                // Limiter entre 0 et 100%
                 percent = Math.max(0, Math.min(100, percent));
                 layerBefore.style.width = percent + '%';
                 sliderHandle.style.left = percent + '%';
             }
 
             if (rangeInput) {
-                rangeInput.addEventListener('input', (e) => updateSlider(e.target.value));
+                rangeInput.addEventListener('input', (e) => {
+                    updateSlider(e.target.value);
+                });
             }
 
+            // Support du glisser à la souris / tactile sur le conteneur
             let isDragging = false;
             function handleMove(e) {
                 if (!isDragging) return;
@@ -784,7 +812,9 @@
                 window.addEventListener('touchmove', handleMove, { passive: true });
             }
 
-            // 2. SIMULATEUR DE PROJET INTERACTIF
+            /* ==================================================================
+               2. SIMULATEUR DE PROJET INTERACTIF
+               ================================================================== */
             const surfaceRange = document.getElementById('surface-range');
             const surfaceVal = document.getElementById('surface-val');
             const serviceBtns = document.querySelectorAll('#opt-service .opt-btn');
@@ -807,6 +837,7 @@
                     summaryTitle.textContent = `${currentService.name} • ${currentMaterial} (${surface} m²)`;
                 }
                 if (metricDuration) {
+                    // Calculer une durée réaliste en fonction de la surface
                     if (currentService.name.includes("Urgence")) {
                         metricDuration.textContent = "Intervention sous 2h max";
                     } else if (surface > 200) {
@@ -841,7 +872,9 @@
                 });
             });
 
-            // 3. RADAR TACTIQUE & SÉLECTEUR DE ZONES
+            /* ==================================================================
+               3. RADAR TACTIQUE & SÉLECTEUR DE ZONES INTERACTIF
+               ================================================================== */
             const sectorCards = document.querySelectorAll('.sector-card');
             const ringCore = document.getElementById('svg-ring-core');
             const ringMid = document.getElementById('svg-ring-mid');
@@ -852,15 +885,18 @@
             const zoneData = {
                 core: {
                     text: "SECTEUR 1 : 0 à 15 km — Équipe de garde mobilisée. Bâchage sous 2h garanti.",
-                    coords: "LAT: 44°50'N • LON: 0°34'W [ZONE PRIORITAIRE]"
+                    coords: "LAT: 44°50'N • LON: 0°34'W [ZONE PRIORITAIRE]",
+                    highlight: "core"
                 },
                 mid: {
                     text: "SECTEUR 2 : 15 à 35 km — Déplacement offert. Diagnostic toiture & devis sous 24h.",
-                    coords: "LAT: 44°42'N • LON: 0°45'W [COURONNE RÉGIONALE]"
+                    coords: "LAT: 44°42'N • LON: 0°45'W [COURONNE RÉGIONALE]",
+                    highlight: "mid"
                 },
                 outer: {
                     text: "SECTEUR 3 : 35 à 50 km — Déplacement offert. Rénovations complètes sur RDV sous 48h.",
-                    coords: "LAT: 44°31'N • LON: 1°02'W [GRANDS CHANTIERS]"
+                    coords: "LAT: 44°31'N • LON: 1°02'W [GRANDS CHANTIERS]",
+                    highlight: "outer"
                 }
             };
 
@@ -873,6 +909,7 @@
                     }
                 });
 
+                // Réinitialiser les styles SVG des cercles
                 if (ringCore && ringMid && ringOuter) {
                     ringCore.classList.remove('highlight-pulse');
                     ringMid.classList.remove('highlight-pulse');
@@ -895,7 +932,21 @@
                 });
             });
 
+            // Active par défaut le secteur 1
             activateZone('core');
+
+            // Animation au scroll pour déclencher le radar
+            const radarSection = document.getElementById('radar');
+            if (radarSection && 'IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            radarSection.classList.add('radar-active');
+                        }
+                    });
+                }, { threshold: 0.15 });
+                observer.observe(radarSection);
+            }
         });
     </script>
 </body>
